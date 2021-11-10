@@ -1,0 +1,16 @@
+
+.background-header-img{
+    background-image: url('https://i.ibb.co/ZSWRxyp/banner.jpg') ; 
+    background-size: cover;
+    background-position:center;
+    min-height: 730px;
+    background-repeat: no-repeat;
+    
+
+}
+.banner-text{
+position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -80%);
+}

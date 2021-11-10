@@ -1,0 +1,14 @@
+.background-footer{
+    /* background-color: #212121; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('https://i.ibb.co/VHVkSs9/footer.png ') ;
+}
+
+.background-footer-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('https://i.ibb.co/VHVkSs9/footer.png ') ;
+    
+     background-position: cover;   
+}
+
+.h1{
+    color: #252525
+}

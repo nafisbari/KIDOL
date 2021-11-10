@@ -1,0 +1,21 @@
+.background-image-1{
+  background-image: linear-gradient(rgba(251, 251, 251, 0.7),rgba(255, 253, 253, 0.7)),url('https://i.ibb.co/nkMNytm/free-shipping.png');  
+  background-position-x:right ;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: 80px
+}
+.background-image-2{
+  background-image: linear-gradient(rgba(251, 251, 251, 0.7),rgba(255, 253, 253, 0.7)),url('https://i.ibb.co/0Yt2whK/24x7.png');  
+  background-position-x:right ;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: 80px
+}
+.background-image-3{
+  background-image: linear-gradient(rgba(251, 251, 251, 0.7),rgba(255, 253, 253, 0.7)),url('https://i.ibb.co/3kJnqrH/dollar.png');  
+  background-position-x:right ;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: 80px
+}

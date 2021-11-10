@@ -8,7 +8,8 @@ const Banner = () => {
                 <img src="https://i.ibb.co/vVcDb2V/curve-bg.png" alt="" />
                 <div className="grid grid-cols-1 lg:grid-cols-2 lg:p-12">
                     <div>
-
+                        
+                        
                     </div>
 
                     <div className="mt-36 pr-12">

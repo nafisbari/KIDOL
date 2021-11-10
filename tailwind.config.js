@@ -8,7 +8,8 @@ module.exports = {
       colors: {
         colorPink: '#f379a7',
         colorBlue: '#95b3e0',
-        colorGray: '#252525'
+        colorGray: '#252525',
+        colorLightGray: '#f3f3f3'
       },
       fontFamily: {
         fredoka: ["Fredoka One", "cursive"],

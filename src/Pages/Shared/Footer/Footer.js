@@ -12,14 +12,14 @@ const Footer = () => {
                             <img src="https://i.ibb.co/ggqZfCh/logo-footer.png " alt="" />
                         </div>
                         <div>
-                            <p className="text-white text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam ut at quam nisi in, est quos possimus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam ut at quam nisi in, est quos possimus.
+                            <p className="text-white text-justify">Kidol is a leading global toy company and owner of one of the strongest portfolios of children’s and family entertainment franchises in the world available in more than 150 countries in collaboration with the world’s leading retail and e-commerce companies.
 
                             </p>
                             <p className="text-white text-left mt-4">
-                                <Link><i className="fab fa-facebook-f mx-4 text-lg hover:text-colorPink " /></Link>
-                                <Link><i className="fab fa-twitter mx-4 text-lg hover:text-colorPink " /></Link>
-                                <Link><i className="fab fa-tumblr mx-4 text-lg hover:text-colorPink " /></Link>
-                                <Link><i className="fab fa-instagram-square mx-4 text-lg hover:text-colorPink " /></Link>
+                                <Link to='/'><i className="fab fa-facebook-f mx-4 text-lg hover:text-colorPink transition duration-300 ease-in-out " /></Link>
+                                <Link to='/' ><i className="fab fa-twitter mx-4 text-lg hover:text-colorPink transition duration-300 ease-in-out " /></Link>
+                                <Link to='/'><i className="fab fa-tumblr mx-4 text-lg hover:text-colorPink transition duration-300 ease-in-out " /></Link>
+                                <Link to='/'><i className="fab fa-instagram-square mx-4 text-lg hover:text-colorPink transition duration-300 ease-in-out " /></Link>
                             </p>
 
                         </div>
@@ -28,11 +28,11 @@ const Footer = () => {
                     <div className="lg:w-3/4 mx-auto mb-12">
                         <h4 className="text-xl font-bold text-white mb-8 text-left font-fredoka">Quick Links</h4>
                         <div>
-                            <Link><p className="text-white mb-2 text-left hover:text-colorPink ">- Helpline</p></Link>
-                            <Link><p className="text-white mb-2 text-left hover:text-colorPink ">- Courses</p></Link>
-                            <Link><p className="text-white mb-2 text-left hover:text-colorPink ">- About</p></Link>
-                            <Link><p className="text-white mb-2 text-left hover:text-colorPink ">- Support</p></Link>
-                            <Link><p className="text-white mb-2 text-left hover:text-colorPink ">- Event</p></Link>
+                            <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Helpline</p></Link>
+                            <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Courses</p></Link>
+                            <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- About</p></Link>
+                            <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Support</p></Link>
+                            <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Event</p></Link>
                         </div>
 
                     </div>
@@ -40,12 +40,12 @@ const Footer = () => {
                         <div className="lg:w-3/4 mx-auto mb-12">
                             <h4 className="text-xl font-bold text-white mb-8 text-left font-fredoka">Other Pages</h4>
                             <div>
-                                <Link><p className="text-white mb-2 text-left hover:text-colorPink ">- Contact</p></Link>
-                                <Link><p className="text-white mb-2 text-left hover:text-colorPink ">- Blogs</p></Link>
-                                <Link><p className="text-white mb-2 text-left hover:text-colorPink ">- Event</p></Link>
-                                <Link><p className="text-white mb-2 text-left hover:text-colorPink " >- FAQ</p></Link>
+                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Contact</p></Link>
+                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Blogs</p></Link>
+                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Event</p></Link>
+                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out " >- FAQ</p></Link>
 
-                                <Link><p className="text-white mb-2 text-left hover:text-colorPink ">- Speakers</p></Link>
+                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Speakers</p></Link>
                             </div>
 
                         </div>
@@ -54,11 +54,11 @@ const Footer = () => {
                         <div className="lg:w-3/4 mx-auto mb-12">
                             <h4 className="text-xl font-bold text-white mb-8 text-left font-fredoka">Compnay</h4>
                             <div>
-                                <Link><p className="text-white mb-2 text-left hover:text-colorPink ">- KIDOL</p></Link>
-                                <Link><p className="text-white mb-2 text-left hover:text-colorPink ">- Shop</p></Link>
-                                <Link><p className="text-white mb-2 text-left hover:text-colorPink ">- Help</p></Link>
-                                <Link><p className="text-white mb-2 text-left hover:text-colorPink ">- Log In</p></Link>
-                                <Link><p className="text-white mb-2 text-left hover:text-colorPink ">- Location</p></Link>
+                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Kidol</p></Link>
+                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Shop</p></Link>
+                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Help</p></Link>
+                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Log In</p></Link>
+                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Location</p></Link>
                             </div>
 
                         </div>
@@ -66,18 +66,19 @@ const Footer = () => {
                     <div className="">
                         <div>
                             <h4 className="text-xl font-bold text-white mb-8 text-left font-fredoka">Payment</h4>
-                            <p className="text-white text-justify ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Ipsam ut at quam nisi in, est quos possimus.
+                            <p className="text-white text-justify ">30+ Payment Options for our Customers, Easy Checkout, Better Conversions, Secure OTP based access
+                                .
 
                             </p>
                         </div>
-                        <Link><img src="https://i.ibb.co/qmjH6x9/payment.png " alt="" className="mt-8" /></Link>
+                        <Link to='/'><img src="https://i.ibb.co/qmjH6x9/payment.png " alt="" className="mt-8" /></Link>
                     </div>
                 </div>
 
 
             </div>
             <div>
-                <p className="text-white p-4"> ©2021 <span className="text-colorPink">KIDOL.</span> Made with <i className="fas fa-heart text-red-600" />  by Nafis</p>
+                <p className="text-white p-4 text-center"> ©2021 <span className="text-colorPink">KIDOL.</span> Made with <i className="fas fa-heart text-red-600" />  by Nafis</p>
             </div>
         </div>
     );

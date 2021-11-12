@@ -31,7 +31,7 @@ const Header = () => {
                                 <><div className="inline-block leading-none flex items-center justify-end">
                                     <h2 className="ininle-block text-2xl text-colorGray font-fredoka mr-2">{user?.displayName}</h2>
                                     <button
-                                        className=" inline-block bg-colorPink hover:bg-colorBlue text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition ease-in-out duration-700"
+                                        className="inline-block bg-colorPink hover:bg-colorBlue text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition ease-in-out duration-700"
                                         type="button" onClick={logout}>
                                         Log Out
                                     </button></div> </>

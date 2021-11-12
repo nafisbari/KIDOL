@@ -32,7 +32,7 @@ const Info = () => {
                     </h2>
 
                     <p className="text-md text-colorGray text-center mb-8">
-                        It's automatic and covers your purchase price plus original shipping and there's no extra fee for coverage
+                        It's automatic and covers your purchase price plus original shippinge and there's no extra fee for coverage
                     </p>
                 </div>
             </div>

@@ -2,11 +2,11 @@ import React from 'react';
 
 const QuestForm = () => {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2  p-8  mt-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2  p-8  mt-44">
             <div className="hidden md:block  w-11/12  ">
                 <img src="https://i.ibb.co/pjywh6P/quest.png" className="-mb-12 mx-auto " alt="" />
             </div>
-            <div className="bg-colorLightGray lg:bg-white rounded-xl p-8 my-auto">
+            <div className="bg-colorLightGray lg:bg-white rounded-xl p-8 mt-12 pt-4">
                 <h1 className="font-fredoka text-4xl lg:text-6xl text-colorPink text-center">
                     Send A Quest
                 </h1>

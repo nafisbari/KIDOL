@@ -8,6 +8,7 @@ import MyAccount from './Pages/Login/MyAccount/MyAccount';
 import DashBoard from './Pages/DashBoard/DashBoard';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Contact from './Pages/Contact/Contact/Contact';
+import AllToys from './Pages/Shared/Toys/AllToys/AllToys';
 
 
 function App() {
@@ -26,12 +27,15 @@ function App() {
             <Route path='/myAccount'>
               <MyAccount />
             </Route>
-            <Route path='/contact'>
-              <Contact />
+            <Route path='/allToys'>
+              <AllToys />
             </Route>
-            <PrivateRoute path='/dashoard'>
-              <DashBoard />
+            <PrivateRoute path='/contact'>
+              <Contact />
             </PrivateRoute>
+            <Route path='/dashboard'>
+              <DashBoard />
+            </Route>
           </Switch>
           <Footer></Footer>
         </Router>

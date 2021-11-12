@@ -28,11 +28,11 @@ const Footer = () => {
                     <div className="lg:w-3/4 mx-auto mb-12">
                         <h4 className="text-xl font-bold text-white mb-8 text-left font-fredoka">Quick Links</h4>
                         <div>
-                            <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Helpline</p></Link>
-                            <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Courses</p></Link>
-                            <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- About</p></Link>
-                            <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Support</p></Link>
-                            <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Event</p></Link>
+                            <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Helpline</p></Link>
+                            <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Courses</p></Link>
+                            <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- About</p></Link>
+                            <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Support</p></Link>
+                            <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Event</p></Link>
                         </div>
 
                     </div>
@@ -40,12 +40,12 @@ const Footer = () => {
                         <div className="lg:w-3/4 mx-auto mb-12">
                             <h4 className="text-xl font-bold text-white mb-8 text-left font-fredoka">Other Pages</h4>
                             <div>
-                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Contact</p></Link>
-                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Blogs</p></Link>
-                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Event</p></Link>
-                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out " >- FAQ</p></Link>
+                                <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Contact</p></Link>
+                                <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Blogs</p></Link>
+                                <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Event</p></Link>
+                                <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out " >- FAQ</p></Link>
 
-                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Speakers</p></Link>
+                                <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Speakers</p></Link>
                             </div>
 
                         </div>
@@ -54,11 +54,11 @@ const Footer = () => {
                         <div className="lg:w-3/4 mx-auto mb-12">
                             <h4 className="text-xl font-bold text-white mb-8 text-left font-fredoka">Compnay</h4>
                             <div>
-                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Kidol</p></Link>
-                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Shop</p></Link>
-                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Help</p></Link>
-                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Log In</p></Link>
-                                <Link to='/'><p className="text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Location</p></Link>
+                                <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Kidol</p></Link>
+                                <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Shop</p></Link>
+                                <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Help</p></Link>
+                                <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Log In</p></Link>
+                                <Link to='/'><p className=" hover-footer-text text-white mb-2 text-left hover:text-colorPink transition duration-300 ease-in-out ">- Location</p></Link>
                             </div>
 
                         </div>

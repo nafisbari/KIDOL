@@ -12,3 +12,12 @@
 .h1{
     color: #252525
 }
+.hover-footer-text{
+    transition: transform 0.2s;
+}
+.hover-footer-text:hover{
+
+transform:  translate(12px);
+    transition: ease-in-out;
+    transition-duration: 200ms; 
+}

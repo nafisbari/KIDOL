@@ -14,7 +14,7 @@ const useFirebase = () => {
     const googleProvider = new GoogleAuthProvider();
 
     //register
-    const registerUser = (email, password, location, history, namess) => {
+    const registerUser = (email, password, location, history, name) => {
         setIsLoading(true)
         createUserWithEmailAndPassword(auth, email, password)
             .then(async (userCredential) => {
@@ -24,7 +24,7 @@ const useFirebase = () => {
                 const user = userCredential.user;
 
                 await updateProfile(auth.currentUser, {
-                    displayName: namess
+                    displayName: name
                 }).then(() => {
                     // Profile updated!
                     // ...
@@ -41,7 +41,7 @@ const useFirebase = () => {
 
             })
             .catch((error) => {
-                
+
                 setAuthError(error.message);
                 // ..
             })

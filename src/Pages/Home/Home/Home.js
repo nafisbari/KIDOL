@@ -1,5 +1,5 @@
 import React from 'react';
-import Toys from '../../Shared/Toys/Toys/Toys';
+import Toys from '../../Toys/Toys/Toys';
 import Banner from '../Banner/Banner';
 import Info from '../Info/Info';
 

@@ -73,7 +73,7 @@ const Register = () => {
 
                     <div className="flex items-center justify-between">
                         <button
-                            className="bg-colorPink hover:bg-colorBlue text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition ease-in-out duration-700"
+                            className="bg-colorPink hover:bg-colorBlue text-white font-bold font-rubik py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition ease-in-out duration-700"
                             type="submit">
                             Sign In
                         </button>

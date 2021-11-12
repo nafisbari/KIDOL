@@ -1,9 +1,25 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 
 const DashBoard = () => {
+    const [orders, setOrders] = useState([]);
+    const { user } = useAuth();
+    const email = user?.email;
+    const uri = `https://young-mesa-35196.herokuapp.com/orders?email=${email}`
+
+    useEffect(() => {
+        axios
+            .get(uri).then((result) => {
+                console.log(result.data)
+                setOrders(result.data)
+            })
+        console.log(uri);
+    }, []);
     return (
-        <>
+        <div>
+            {/* top banner */}
             <div className="bg-colorBlue ">
                 <img src="https://i.ibb.co/vVcDb2V/curve-bg.png" alt="" />
                 <div className="py-20">
@@ -13,9 +29,13 @@ const DashBoard = () => {
                     </p>
                 </div>
             </div>
-          
+            {/* top banner end */}
 
-        </>
+
+            <div>
+                
+            </div>
+        </div>
 
     );
 };

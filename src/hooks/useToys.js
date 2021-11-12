@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const useToys = () => {
     const [toys, setToys] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:8000/toys')
+        fetch('https://young-mesa-35196.herokuapp.com/toys')
             .then(res => res.json())
             .then(data => setToys(data))
 

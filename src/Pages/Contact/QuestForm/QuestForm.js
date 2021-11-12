@@ -1,6 +1,9 @@
+import userEvent from '@testing-library/user-event';
 import React from 'react';
+import useAuth from '../../../hooks/useAuth';
 
 const QuestForm = () => {
+    const { user } = useAuth();
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2  p-8  mt-44">
             <div className="hidden md:block  w-11/12  ">
@@ -19,6 +22,8 @@ const QuestForm = () => {
                         <input
                             className="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded-xl py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                             type="text"
+                            defaultValue={user.displayName}
+                            disabled
                             placeholder="Name" />
 
                     </div>
@@ -29,6 +34,8 @@ const QuestForm = () => {
                         <input
                             className="rounded-xl appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                             type="text"
+                            defaultValue={user.email}
+                            disabled
                             placeholder="Email" />
                     </div>
 
@@ -65,7 +72,15 @@ const QuestForm = () => {
                     </div>
 
 
+                    <div className="px-3 mt-8 mb-4">
+                        <button
+                            className="bg-colorPink hover:bg-colorBlue text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition ease-in-out duration-700 font-rubik"
+                            type="submit">
+                            Submit
+                        </button>
+                    </div>
                 </form>
+
             </div>
         </div>
     );

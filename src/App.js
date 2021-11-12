@@ -8,7 +8,9 @@ import MyAccount from './Pages/Login/MyAccount/MyAccount';
 import DashBoard from './Pages/DashBoard/DashBoard';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Contact from './Pages/Contact/Contact/Contact';
-import AllToys from './Pages/Shared/Toys/AllToys/AllToys';
+import AllToys from './Pages/Toys/AllToys/AllToys';
+import ToyDetails from './Pages/Toys/ToyDetails/ToyDetails';
+import Order from './Pages/Toys/Order/Order';
 
 
 function App() {
@@ -29,6 +31,12 @@ function App() {
             </Route>
             <Route path='/allToys'>
               <AllToys />
+            </Route>
+            <Route path='/toyDetails/:toyId'>
+              <ToyDetails />
+            </Route>
+            <Route path='/order/:orderId'>
+              <Order />
             </Route>
             <PrivateRoute path='/contact'>
               <Contact />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import useToys from '../../../hooks/useToys';
@@ -6,6 +6,7 @@ import useToys from '../../../hooks/useToys';
 const ToyDetails = () => {
     const { toyId } = useParams();
     const { toys } = useToys();
+    const [click, setClick] = useState('information');
     const toy = toys.filter(toy => (toy._id) == (toyId));
     console.log(toy[0]);
 
@@ -55,20 +56,25 @@ const ToyDetails = () => {
 
             <div className="mt-28">
                 <div className="w-1/3 mx-auto">
-                    <button className="bg-white rounded px-6 py-4 hover:bg-colorPink text-colorGray hover:text-white transform transition duration 700 focus:bg-colorPink focus:text-white font-rubik ">
+                    <button className="bg-white rounded px-6 py-4 hover:bg-colorPink text-colorGray hover:text-white transform transition duration 700 focus:bg-colorPink focus:text-white font-rubik " onClick={() => setClick('information')}>
                         <p className="  font-fredoka text-center inline-block mx-6">Information</p>
                     </button>
-                    <button className="bg-white rounded px-6 py-4 hover:bg-colorPink text-colorGray hover:text-white  hover:text-white transform transition duration 700 focus:bg-colorPink focus:text-white font-rubik ">
+                    <button className="bg-white rounded px-6 py-4 hover:bg-colorPink text-colorGray hover:text-white  hover:text-white transform transition duration 700 focus:bg-colorPink focus:text-white font-rubik " onClick={() => setClick("review")}>
                         <p className=" text-center font-fredoka text-center inline-block mx-6">Information</p>
                     </button>
                 </div>
 
-                <div className="border-4 border-colorLightGray p-12">
+                <div className={`${click === 'information' ? 'block' : 'hidden'} border-4 border-colorLightGray p-12`}>
                     <p className="font-rubik text-colorGray text-justify leading-8">{toy[0]?.longDescOne}
                         <br />
                         <br />
 
                         {toy[0]?.longDescTwo}</p>
+                </div>
+                <div className={`${click === 'review' ? 'block' : 'hidden'} border-4 border-colorLightGray p-12`}>
+                    <p className="font-rubik text-colorGray text-justify leading-8">{toy[0]?.longDescOne}</p>
+
+
                 </div>
             </div>
 

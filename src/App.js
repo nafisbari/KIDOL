@@ -11,6 +11,8 @@ import Contact from './Pages/Contact/Contact/Contact';
 import AllToys from './Pages/Toys/AllToys/AllToys';
 import ToyDetails from './Pages/Toys/ToyDetails/ToyDetails';
 import Order from './Pages/Toys/Order/Order';
+import NotFound from './Pages/NotFound/NotFound'
+
 
 
 function App() {
@@ -43,6 +45,9 @@ function App() {
             </PrivateRoute>
             <Route path='/dashboard'>
               <DashBoard />
+            </Route>
+            <Route path="*">
+              <NotFound />
             </Route>
           </Switch>
           <Footer></Footer>

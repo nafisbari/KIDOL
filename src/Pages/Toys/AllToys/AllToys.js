@@ -21,7 +21,7 @@ const AllToys = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-12">
                     {
                         toys.map(toy =>
-                            <div className="w-11/12 mx-auto   px-8 py-12 bg-colorToys h-full rounded">
+                            <div key={toy._id} className="w-11/12 mx-auto   px-8 py-12 bg-colorToys h-full rounded">
 
                                 <div className="h-1/2 mb-8" >
                                     <img src={toy.img} className="mx-auto hover-img " alt="" />

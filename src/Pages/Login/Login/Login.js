@@ -79,16 +79,16 @@ const Login = () => {
                     </div>
                 </form>
                 <div className="px-8">
-                <div className="mt-8 flex justify-between items-center">
-                    <hr className="w-full border-1 border-dashed border-colorGray" />
-                    <span className="font-fredoka text-colorGray p-4">OR</span>
-                    <hr className="w-full border-1 border-dashed border-colorGray" />
-                </div>
-                <button
-                    className="bg-red-800 hover:bg-colorBlue text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition ease-in-out duration-700 font-rubik"
-                    onClick={handleGoogleSignIn}>
-                    <i className="fab fa-google-plus-g" /> Sign In
-                </button>
+                    <div className="mt-8 flex justify-between items-center">
+                        <hr className="w-full border-1 border-dashed border-colorGray" />
+                        <span className="font-fredoka text-colorGray p-4">OR</span>
+                        <hr className="w-full border-1 border-dashed border-colorGray" />
+                    </div>
+                    <button
+                        className="bg-red-800 hover:bg-colorBlue text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition ease-in-out duration-700 font-rubik"
+                        onClick={handleGoogleSignIn}>
+                        <i className="fab fa-google-plus-g" /> Sign In
+                    </button>
                 </div>
 
             </div >

@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react/cjs/react.development';
 import useAuth from '../../../hooks/useAuth';
 import useToys from '../../../hooks/useToys';
+import swal from 'sweetalert';
+
 
 const Order = () => {
     const { orderId } = useParams();
@@ -31,7 +33,8 @@ const Order = () => {
             name: user.displayName,
             email: user.email,
             toyName: orderedToy[0]?.name,
-            price: orderedToy[0]?.price
+            price: orderedToy[0]?.price,
+            status: 'Pending'
 
         }
 
@@ -41,7 +44,7 @@ const Order = () => {
             .then((result) => {
                 console.log(result)
                 if (result.data.insertedId) {
-                    alert('Order is placed successfully');
+                    swal("Good job!", "You clicked the button!", "success");
 
                 } else {
                     alert('Ooops!! Something went wrong. Please try again after sometime ');
@@ -159,6 +162,15 @@ const Order = () => {
                                 //onBlur={handleOnChange}
                                 hidden
                             />
+                            <input
+                                className="shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                                type="text"
+                                placeholder=""
+                                name="status"
+                                defaultValue="Pending"
+                                //onBlur={handleOnChange}
+                                hidden
+                            />
 
                         </div>
 
@@ -166,7 +178,7 @@ const Order = () => {
                             <button
                                 className="bg-colorPink hover:bg-colorBlue text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition ease-in-out duration-700 font-rubik"
                                 type="submit">
-                                Sign In
+                                Place Order
                             </button>
                         </div>
                     </form>

@@ -43,6 +43,7 @@ const Login = () => {
                             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             type="email"
                             placeholder="Email"
+                            required
                             name="email"
                             onBlur={handleOnChangeL}
                         />
@@ -55,6 +56,7 @@ const Login = () => {
                             className="shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
                             type="password"
                             placeholder="Password"
+                            required
                             name="password"
                             onBlur={handleOnChangeL}
                         />

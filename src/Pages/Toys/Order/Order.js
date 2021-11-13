@@ -34,7 +34,8 @@ const Order = () => {
             email: user.email,
             toyName: orderedToy[0]?.name,
             price: orderedToy[0]?.price,
-            status: 'Pending'
+            status: "Pending",
+            img: orderedToy[0]?.img
 
         }
 
@@ -44,14 +45,15 @@ const Order = () => {
             .then((result) => {
                 console.log(result)
                 if (result.data.insertedId) {
-                    swal("Good job!", "You clicked the button!", "success");
+                    swal("Success!", "Your order has been placed successfully!", "success");
 
                 } else {
-                    alert('Ooops!! Something went wrong. Please try again after sometime ');
+                    swal("Ooops!!!", " Something went wrong. Please try again after sometime", "warning");
                 }
 
             })
         e.preventDefault();
+        e.target.reset();
     }
 
     return (
@@ -110,6 +112,7 @@ const Order = () => {
                                 type="Number"
                                 placeholder="Your Phone"
                                 name="phone"
+                                required
                                 onBlur={handleOnChange}
                             />
 
@@ -123,6 +126,7 @@ const Order = () => {
                                 type="text"
                                 placeholder="Shipping address"
                                 name="address"
+                                required
                                 onBlur={handleOnChange}
                             />
 
@@ -136,6 +140,7 @@ const Order = () => {
                                 type="Number"
                                 placeholder="Quantity"
                                 name="quantity"
+                                required
                                 onBlur={handleOnChange}
                             />
 
@@ -168,6 +173,15 @@ const Order = () => {
                                 placeholder=""
                                 name="status"
                                 defaultValue="Pending"
+                                //onBlur={handleOnChange}
+                                hidden
+                            />
+                            <input
+                                className="shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                                type="text"
+                                placeholder=""
+                                name="img"
+                                defaultValue={orderedToy[0]?.img}
                                 //onBlur={handleOnChange}
                                 hidden
                             />

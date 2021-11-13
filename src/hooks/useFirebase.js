@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import initializeFirebaseApp from '../Pages/Login/Firebase/firebase.init'
 import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signOut, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, updateProfile } from "firebase/auth";
+import axios from "axios";
 
 
 initializeFirebaseApp()
@@ -8,7 +9,8 @@ initializeFirebaseApp()
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
-    const [authError, setAuthError] = useState('')
+    const [authError, setAuthError] = useState('');
+    const [admin, setAdmin] = useState(false)
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -21,13 +23,16 @@ const useFirebase = () => {
                 // Signed in 
                 setAuthError('');
 
+                //save user to the database
+                savedUser(email, name)
+
                 const user = userCredential.user;
 
                 await updateProfile(auth.currentUser, {
                     displayName: name
                 }).then(() => {
                     // Profile updated!
-                    // ...
+
                 }).catch((error) => {
                     // An error occurred
                     // ...
@@ -35,7 +40,7 @@ const useFirebase = () => {
 
                 console.log(user);
 
-                const destination = location?.state?.from || '/dashboard';
+                const destination = location?.state?.from || '/';
                 history.replace(destination);
 
 
@@ -57,7 +62,7 @@ const useFirebase = () => {
             .then((userCredential) => {
 
                 //redirecting to the original place jekhane jete chaisilam
-                const destination = location?.state?.from || '/dashboard';
+                const destination = location?.state?.from || '/';
                 history.replace(destination);
 
                 // Signed in 
@@ -76,9 +81,10 @@ const useFirebase = () => {
         setIsLoading(true);
         signInWithPopup(auth, googleProvider)
             .then((result) => {
-
+                const user = result.user;
+                savedGoodleUser(user.email, user.displayName)
                 //redirect suer
-                const destination = location?.state?.from || '/dashboard';
+                const destination = location?.state?.from || '/';
                 history.replace(destination);
 
                 //error
@@ -112,6 +118,14 @@ const useFirebase = () => {
         return () => unsubscribe;
     }, [])
 
+    useEffect(() => {
+        fetch(`https://young-mesa-35196.herokuapp.com/users/${user.email}`)
+            .then(res => res.json())
+            .then(data => {
+                setAdmin(data.admin)
+            })
+    }, [user.email])
+
     //signout
     const logout = () => {
         setIsLoading(true)
@@ -126,6 +140,21 @@ const useFirebase = () => {
             .finally(() => setIsLoading(false));
     }
 
+    const savedUser = (email, displayName) => {
+        const user = { email, displayName };
+        axios.post('https://young-mesa-35196.herokuapp.com/users', user)
+            .then((result) => {
+                console.log(result)
+            })
+    }
+
+    const savedGoodleUser = (email, displayName) => {
+        const user = { email, displayName };
+        axios.put('https://young-mesa-35196.herokuapp.com/users', user)
+            .then((res) => {
+                console.log(res)
+            })
+    }
 
     return {
         registerUser,
@@ -134,7 +163,9 @@ const useFirebase = () => {
         authError,
         googleSignIn,
         loginUser,
-        isLoading
+        isLoading,
+        admin
+
     };
 };
 

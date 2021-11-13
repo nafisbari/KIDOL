@@ -16,7 +16,7 @@ const Toy = ({ toy }) => {
                 </div>
 
                 <div>
-                    <p> Rating: {review}</p>
+                    <p> Rating: {review} <i className="fas fa-star text-yellow-500" /></p>
                     <Link to='/'><h3 className="text-left text-xl font-bold mt-4 font-rubik text-colorGray hover:text-colorPink transition ease-in-out duration-700">{name}</h3></Link>
                     <h3 className="text-left text-lg font-medium mt-4 font-rubik text-colorGray">{shortDesc.slice(0, 50)}</h3>
                     <p className="text-left text-lg font-bold mt-4 font-rubik text-colorGray">$ {price}</p>

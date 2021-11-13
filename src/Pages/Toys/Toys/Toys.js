@@ -9,7 +9,7 @@ const Toys = () => {
                 <Link to='/allToys'><h1 className="font-fredoka text-4xl text-colorGray text-center hover:text-colorPink transform transition duration 700 w-1/2 mx-auto mb-8">
                     Trending Products
                 </h1></Link>
-                <p className="text-lg font-rubik text-center mb-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti fugit maiores voluptatem perferendis! </p>
+                <p className="text-lg font-rubik text-center mb-20">This is some of the trending products, shop now for more exciting offers and collection for you children! </p>
             </div>
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-12">
                 {

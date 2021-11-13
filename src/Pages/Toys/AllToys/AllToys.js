@@ -28,7 +28,7 @@ const AllToys = () => {
                                 </div>
 
                                 <div>
-                                    <p> Rating: {toy.review}</p>
+                                    <p> Rating: {toy.review} <i className="fas fa-star text-yellow-500" /></p>
                                     <Link to='/'><h3 className="text-left text-xl font-bold mt-4 font-rubik text-colorGray hover:text-colorPink transition ease-in-out duration-700">{toy.name.slice(0, 20)}</h3></Link>
                                     <h3 className="text-left text-lg font-medium mt-4 font-rubik text-colorGray">{toy.shortDesc.slice(0, 50)}</h3>
                                     <p className="text-left text-lg font-bold mt-4 font-rubik text-colorGray">$ {toy.price}</p>

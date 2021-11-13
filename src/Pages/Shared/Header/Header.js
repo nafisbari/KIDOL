@@ -20,10 +20,14 @@ const Header = () => {
                 <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                     <div className="text-sm lg:flex-grow">
                         <NavLink to='/home' className=" block lg:inline-block font-medium text-gray-500 hover:text-colorPink mx-4 text-2xl font-rubik text-colorGray">Home</NavLink>
-                        <NavLink to='/allToys' className=" block lg:inline-block font-medium text-gray-500 hover:text-colorPink mx-4  text-2xl font-rubik text-colorGray">Shop</NavLink>
-                        <NavLink to='/contact' className=" block lg:inline-block font-medium text-gray-500 hover:text-colorPink mx-4 text-2xl font-rubik text-colorGray">Contact</NavLink>
 
-                        <NavLink to='/dashBoard' className=" block  lg:inline-block font-medium text-gray-500 hover:text-colorPink mx-4 text-2xl font-rubik text-colorGray">DashBoard</NavLink>
+                        <NavLink to='/contact' className=" block lg:inline-block font-medium text-gray-500 hover:text-colorPink mx-4 text-2xl font-rubik text-colorGray">Contact</NavLink>
+                        {
+                            user.email && <>
+                                <NavLink to='/allToys' className=" block lg:inline-block font-medium text-gray-500 hover:text-colorPink mx-4  text-2xl font-rubik text-colorGray">Shop</NavLink>
+                                <NavLink to='/dashBoard' className=" block  lg:inline-block font-medium text-gray-500 hover:text-colorPink mx-4 text-2xl font-rubik text-colorGray">DashBoard</NavLink>
+                            </>
+                        }
 
                     </div>
                     <div>

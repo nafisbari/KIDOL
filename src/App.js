@@ -5,13 +5,15 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import AuthProvider from './context/AuthProvider/AuthProvider';
 import MyAccount from './Pages/Login/MyAccount/MyAccount';
-import DashBoard from './Pages/DashBoard/DashBoard';
+import DashBoard from './Pages/DashBoard/Dashboard/DashBoard';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Contact from './Pages/Contact/Contact/Contact';
 import AllToys from './Pages/Toys/AllToys/AllToys';
 import ToyDetails from './Pages/Toys/ToyDetails/ToyDetails';
 import Order from './Pages/Toys/Order/Order';
 import NotFound from './Pages/NotFound/NotFound'
+import ReviewsAll from './Pages/Home/Review/ReviewsAll';
+
 
 
 
@@ -31,21 +33,25 @@ function App() {
             <Route path='/myAccount'>
               <MyAccount />
             </Route>
-            <Route path='/allToys'>
+            <PrivateRoute path='/allToys'>
               <AllToys />
-            </Route>
-            <Route path='/toyDetails/:toyId'>
-              <ToyDetails />
-            </Route>
-            <Route path='/order/:orderId'>
-              <Order />
-            </Route>
-            <PrivateRoute path='/contact'>
-              <Contact />
             </PrivateRoute>
-            <Route path='/dashboard'>
-              <DashBoard />
+            <PrivateRoute path='/allToys'>
+              <ReviewsAll />
+            </PrivateRoute>
+            <PrivateRoute path='/toyDetails/:toyId'>
+              <ToyDetails />
+            </PrivateRoute>
+            <PrivateRoute path='/order/:orderId'>
+              <Order />
+            </PrivateRoute>
+
+            <Route path='/contact'>
+              <Contact />
             </Route>
+            <PrivateRoute path='/dashboard'>
+              <DashBoard />
+            </PrivateRoute>
             <Route path="*">
               <NotFound />
             </Route>

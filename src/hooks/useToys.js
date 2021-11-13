@@ -10,7 +10,8 @@ const useToys = () => {
 
     }, [])
     return {
-        toys
+        toys,
+        setToys
     }
 }
 

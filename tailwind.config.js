@@ -10,7 +10,8 @@ module.exports = {
         colorBlue: '#95b3e0',
         colorGray: '#252525',
         colorLightGray: '#f3f3f3',
-        colorToys: '#e4f6fe'
+        colorToys: '#e4f6fe',
+        colorRev: '#c0dfe8'
       },
       fontFamily: {
         fredoka: ["Fredoka One", "cursive"],
